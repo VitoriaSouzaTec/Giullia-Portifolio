@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Deep space background - navy/black gradient base */
+    --background: 230 35% 7%;
+    --foreground: 0 0% 98%;
+
+    /* Card with subtle glow */
+    --card: 230 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 230 30% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Cobre Profundo - Primary (Warm) */
+    --primary: 19 42% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Electric Cyan - Secondary (Cool/Neon) */
+    --secondary: 180 100% 50%;
+    --secondary-foreground: 230 35% 7%;
+
+    --muted: 230 25% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    /* Accent - Ruivo Metálico (brighter copper for highlights) */
+    --accent: 30 61% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 230 25% 20%;
+    --input: 230 25% 15%;
+    --ring: 19 42% 51%;
+
+    --radius: 0.75rem;
+
+    /* Neon glow effects */
+    --glow-primary: 19 42% 51%;
+    --glow-secondary: 180 100% 50%;
+    
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(230 35% 7%) 0%, hsl(250 40% 12%) 50%, hsl(230 35% 7%) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(280 85% 65%) 0%, hsl(190 95% 50%) 100%);
+    
+    --sidebar-background: 230 30% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 280 85% 65%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 230 25% 15%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 230 25% 20%;
+    --sidebar-ring: 280 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Inter',sans-serif];
+    background: linear-gradient(135deg, hsl(230 35% 7%) 0%, hsl(250 40% 12%) 50%, hsl(230 35% 7%) 100%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  /* Neon glow effects */
+  .glow-primary {
+    box-shadow: 0 0 20px hsl(var(--glow-primary) / 0.5),
+                0 0 40px hsl(var(--glow-primary) / 0.3),
+                0 0 60px hsl(var(--glow-primary) / 0.2);
+  }
+  
+  .glow-secondary {
+    box-shadow: 0 0 20px hsl(var(--glow-secondary) / 0.5),
+                0 0 40px hsl(var(--glow-secondary) / 0.3),
+                0 0 60px hsl(var(--glow-secondary) / 0.2);
+  }
+  
+  .glow-text-primary {
+    text-shadow: 0 0 10px hsl(var(--glow-primary) / 0.8),
+                 0 0 20px hsl(var(--glow-primary) / 0.5),
+                 0 0 30px hsl(var(--glow-primary) / 0.3);
+  }
+  
+  .glow-text-secondary {
+    text-shadow: 0 0 10px hsl(var(--glow-secondary) / 0.8),
+                 0 0 20px hsl(var(--glow-secondary) / 0.5),
+                 0 0 30px hsl(var(--glow-secondary) / 0.3);
+  }
+  
+  .border-glow-primary {
+    border-color: hsl(var(--primary));
+    box-shadow: 0 0 15px hsl(var(--glow-primary) / 0.4),
+                inset 0 0 15px hsl(var(--glow-primary) / 0.1);
+  }
+  
+  .border-glow-secondary {
+    border-color: hsl(var(--secondary));
+    box-shadow: 0 0 15px hsl(var(--glow-secondary) / 0.4),
+                inset 0 0 15px hsl(var(--glow-secondary) / 0.1);
+  }
+  
+  .hover-glow-primary {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-glow-primary:hover {
+    box-shadow: 0 0 25px hsl(var(--glow-primary) / 0.6),
+                0 0 50px hsl(var(--glow-primary) / 0.4),
+                0 0 75px hsl(var(--glow-primary) / 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .hover-glow-secondary {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-glow-secondary:hover {
+    box-shadow: 0 0 25px hsl(var(--glow-secondary) / 0.6),
+                0 0 50px hsl(var(--glow-secondary) / 0.4),
+                0 0 75px hsl(var(--glow-secondary) / 0.3);
+    transform: translateY(-2px);
+  }
+}
