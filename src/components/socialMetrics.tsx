@@ -102,8 +102,7 @@ export default function SocialMetrics() {
                   </div>
                 </div>
               </div>
-
-              {/* Idades */}
+             
               <div>
                 <p className="text-sm text-[hsl(var(--muted-foreground))] mb-2">Faixas etárias principais</p>
                 <div className="space-y-2">
@@ -132,7 +131,6 @@ export default function SocialMetrics() {
                 </ul>
               </div>
 
-              {/* Países */}
               <div>
                 <p className="text-sm text-[hsl(var(--muted-foreground))] mb-2">Países</p>
                 <div className="flex gap-2 flex-wrap">
@@ -201,7 +199,6 @@ export default function SocialMetrics() {
                 </div>
               </div>
 
-              {/* Países */}
               <div>
                 <p className="text-sm text-[hsl(var(--muted-foreground))] mb-2">Países</p>
                 <div className="flex gap-2 flex-wrap">
