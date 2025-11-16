@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="py-16 px-4">
+    <section  id="sobremim" className="py-16 px-4 ">
       <div className="max-w-4xl mx-auto">
         <div className="bg-card/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-primary/20 glow-primary">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary glow-text-primary">A Essência: Conteúdo, Ciência e Autenticidade</h2>

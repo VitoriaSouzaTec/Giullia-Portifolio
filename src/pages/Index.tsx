@@ -4,6 +4,7 @@ import ExpertisePillars from "@/components/ExpertisePillars";
 import SocialLinks from "@/components/SocialLinks";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import SocialMetrics from "@/components/SocialMetrics";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <AboutSection />
       <ExpertisePillars />
       <SocialLinks />
+      <SocialMetrics/>
       <ContactSection />
       <Footer />
     </div>

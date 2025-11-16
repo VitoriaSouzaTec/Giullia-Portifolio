@@ -13,7 +13,7 @@ const ProfileHeader = () => {
   return (
     <header className="relative pt-20 pb-12 px-4">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Profile Image with Neon Glow */}
+     
         <div className="mb-8 flex justify-center">
           <div className="relative animate-float">
             <div className="absolute inset-0 rounded-full border-glow-primary animate-glow-pulse" />
@@ -21,12 +21,12 @@ const ProfileHeader = () => {
           </div>
         </div>
 
-        {/* Name */}
+     
         <h1 className="text-6xl md:text-4xl font-bold mb-4 glow-text-secondary tracking-tight">
           GIULLIA ALBERTINI
         </h1>
 
-        {/* Subtitle */}
+     
         <p className="text-xl md:text text-primary glow-text-primary font-light mb-8">
           Médica Veterinária | Criadora de Conteúdo | Gamer | Modelo
         </p>
@@ -45,9 +45,9 @@ const ProfileHeader = () => {
           })}
         </div>
 
-        {/* CTA Button */}
-        <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-full text-lg font-semibold glow-primary hover-glow-primary transition-all">Mais Sobre mim 
-        </button>
+   
+        <a href= "#sobremim" className=" mb-2 bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-4 rounded-full text-lg font-semibold glow-primary hover-glow-primary transition-all">Mais Sobre mim 
+        </a>
       </div>
     </header>
   );
